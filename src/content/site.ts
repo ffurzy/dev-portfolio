@@ -13,33 +13,32 @@ export type SiteContent = {
   about: string[];
   experience: ExperienceItem[];
   links: {
-    github: string;
-    linkedin: string;
-    email: string;
+    github?: string;
+    linkedin?: string;
+    email?: string;
   };
 };
 
-// Links are placeholders until the real ones are set.
+// Placeholder copy — replace with real details.
 export const site: SiteContent = {
   name: "Dmitrii Musikhin",
   title: "Dmitrii Musikhin — Web Developer",
   description:
-    "Full-stack developer working with TypeScript, React and Node.js, building web products since 2023.",
+    "Independent web developer building products with TypeScript, Next.js and NestJS.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://dmitrii.dev",
-  hero: "Dmitrii Musikhin is a full-stack developer working with TypeScript, React and Node.js. Building web products since 2023, from the database to the interface, with a focus on clean structure and things that just work.",
+  hero: "Dmitrii Musikhin is an independent web developer building fast, well-structured products with TypeScript, Next.js and NestJS. Focused on clear interfaces, solid backends and the details in between.",
   about: [
-    "I came to development in 2023 and have been building for the web since: interfaces in React and Next.js, backends in Node.js and NestJS, with TypeScript on both sides. In 2026 I completed Yandex Practicum's 20-month Full-Stack Developer programme, which covered the full path from layout and accessibility to Node.js services, application security, testing and Python backends.",
+    "I design and build web products end to end: from the data model and API to the interface people actually use. Most of my work lives in TypeScript — Next.js on the front, NestJS on the back — with the occasional SwiftUI app when a product needs to live on a phone.",
+    "I care about things that are easy to overlook: predictable state, honest error handling, pages that load before you notice them. The result should feel quiet and obvious.",
   ],
   experience: [
-    {
-      period: "2025 — 2026",
-      role: "Full-Stack Developer: Extended Program, Yandex Practicum",
-    },
-    { period: "2023 — now", role: "Freelance full-stack developer" },
+    { period: "2024 — now", role: "Independent web developer" },
+    { period: "2021 — 2024", role: "Senior full-stack engineer, product studio" },
+    { period: "2018 — 2021", role: "Full-stack engineer, fintech" },
   ],
   links: {
-    github: "https://github.com/dmitriimusikhin",
-    linkedin: "https://www.linkedin.com/in/dmitriimusikhin",
-    email: "mailto:hello@dmitrii.dev",
+    github: "https://github.com/ffurzy",
+    linkedin: "",
+    email: "mailto:test@test.test",
   },
 };

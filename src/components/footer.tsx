@@ -8,13 +8,17 @@ export function Footer() {
         © {year} {site.name}
       </span>
       <nav aria-label="Contact" className="flex gap-element">
-        <a href={site.links.email}>Email</a>
-        <a href={site.links.github} target="_blank" rel="noreferrer">
-          GitHub
-        </a>
-        <a href={site.links.linkedin} target="_blank" rel="noreferrer">
-          LinkedIn
-        </a>
+        {site.links.email && <a href={site.links.email}>Email</a>}
+        {site.links.github && (
+          <a href={site.links.github} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        )}
+        {site.links.linkedin && (
+          <a href={site.links.linkedin} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        )}
       </nav>
     </footer>
   );
