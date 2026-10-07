@@ -9,7 +9,7 @@ type ProjectGridProps = {
 export function ProjectGrid({ projects, className = "" }: ProjectGridProps) {
   return (
     <ul
-      className={`grid grid-cols-1 gap-x-[40px] gap-y-[40px] sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-gutter ${className}`}
+      className={`grid grid-cols-1 gap-x-[40px] gap-y-[100px] sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-gutter ${className}`}
     >
       {projects.map((project) => (
         <ProjectTile key={project.slug} project={project} />
