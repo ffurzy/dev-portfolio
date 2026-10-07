@@ -40,6 +40,11 @@
   --shadow-warm:
     rgba(90, 50, 40, 0.08) 0px 1px 2px 0px, rgba(90, 50, 40, 0.1) 0px 4px 8px 0px,
     rgba(90, 50, 40, 0.14) 0px 12px 24px -4px, rgba(80, 40, 30, 0.18) 0px 32px 56px -12px;
+
+  /* Same stack, lifted a little further off the table: used on hover. */
+  --shadow-warm-lift:
+    rgba(90, 50, 40, 0.06) 0px 1px 2px 0px, rgba(90, 50, 40, 0.1) 0px 8px 14px 0px,
+    rgba(90, 50, 40, 0.14) 0px 20px 32px -4px, rgba(80, 40, 30, 0.2) 0px 44px 72px -12px;
 }
 
 html {

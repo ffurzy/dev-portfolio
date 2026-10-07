@@ -39,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     slug: "elina-gabitova",
-    title: "Elina Gabitova",
+    title: "Landscape portfolio",
     credit: "Portfolio site · 2026",
     year: "2026",
     role: "Design and development",
