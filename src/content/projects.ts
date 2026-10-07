@@ -21,6 +21,23 @@ export type Project = {
 // Placeholder projects — replace with real work. Covers live in public/projects/.
 export const projects: Project[] = [
   {
+    slug: "stdout-chat",
+    title: "stdout.chat",
+    credit: "iOS app · 2026",
+    year: "2026",
+    role: "Design and development",
+    stack: ["SwiftUI", "Node.js", "TypeScript", "Vercel"],
+    summary:
+      "Text-only chat app for iOS that matches strangers by shared interests. No video, no photos, no sign-up.",
+    description: [
+      "You pick up to five interests, get paired with someone who shares at least one, and talk. Every good conversation earns rank; chats are ephemeral and nothing is saved. #void is the one public room, where every line dissolves after 24 hours.",
+      "The product is three pieces: the iOS app, a zero-dependency CLI on npm that reads and posts to #void from the terminal, and a static landing site on Vercel with guides and a live view of the room.",
+    ],
+    cover: "/projects/stdout-chat.jpg",
+    images: ["/projects/stdout-chat.jpg", "/projects/stdout-chat-void.jpg"],
+    links: { live: "https://stdout.chat", source: "https://github.com/stdout-chat/cli" },
+  },
+  {
     slug: "elina-gabitova",
     title: "Elina Gabitova",
     credit: "Portfolio site · 2026",
