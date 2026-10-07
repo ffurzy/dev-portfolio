@@ -21,6 +21,23 @@ export type Project = {
 // Placeholder projects — replace with real work. Covers live in public/projects/.
 export const projects: Project[] = [
   {
+    slug: "elina-gabitova",
+    title: "Elina Gabitova",
+    credit: "Portfolio site · 2026",
+    year: "2026",
+    role: "Design and development",
+    stack: ["Astro", "React", "Tailwind CSS", "Cloudflare"],
+    summary:
+      "Portfolio for a landscape designer working in the Hamptons and New York: projects, field work, about and contact.",
+    description: [
+      "A quiet, image-first site where the work does the talking. Each project gets its own page with a full-width gallery, location and year; a separate field-work section shows gardens as they grow in.",
+      "Built with Astro so every page ships as static HTML with almost no JavaScript — the only island is the mobile menu. Styled with Tailwind, deployed on Cloudflare.",
+    ],
+    cover: "/projects/elina-gabitova.jpg",
+    images: ["/projects/elina-gabitova.jpg", "/projects/elina-gabitova-project.jpg"],
+    links: { live: "https://elinagabitova.com" },
+  },
+  {
     slug: "ledger",
     title: "Ledger",
     credit: "Web app · 2025",
