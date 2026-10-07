@@ -35,9 +35,11 @@
 
   --radius-md: 5px;
 
-  /* Warm brown shadow stack — only beneath imagery. */
+  /* Warm brown shadow stack — only beneath imagery.
+     Layered like paper on a table: a tight contact edge, a mid lift and a soft ambient spread. */
   --shadow-warm:
-    rgba(90, 50, 40, 0.15) 0px 5px 15px 0px, rgba(80, 40, 30, 0.1) 0px 4px 8px 0px;
+    rgba(90, 50, 40, 0.08) 0px 1px 2px 0px, rgba(90, 50, 40, 0.1) 0px 4px 8px 0px,
+    rgba(90, 50, 40, 0.14) 0px 12px 24px -4px, rgba(80, 40, 30, 0.18) 0px 32px 56px -12px;
 }
 
 html {
