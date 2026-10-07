@@ -25,7 +25,7 @@ export const site: SiteContent = {
   title: "Dmitrii Musikhin — Web Developer",
   description:
     "Full-stack developer working with TypeScript, React and Node.js, building web products since 2023.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://dmitrii.dev",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://dmitriimusikhin.dev",
   hero: "Dmitrii Musikhin is a full-stack developer working with TypeScript, React and Node.js. Building web products since 2023, from the database to the interface, with a focus on clean structure and things that just work.",
   about: [
     "Hi, I'm Dmitrii, a full-stack developer freelancing since 2023. I build web products and mobile apps end to end with TypeScript, React and Node.js, and recently finished Yandex Practicum's 20-month full-stack programme, Python included.",
