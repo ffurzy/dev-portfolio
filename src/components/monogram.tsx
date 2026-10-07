@@ -1,23 +1,33 @@
-// The only graphic mark in the system: a 16px circle outline with the initial.
+// The only graphic mark in the system: a rounded rectangle outline with the initials.
 export function Monogram() {
   return (
     <svg
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
+      width="60"
+      height="40"
+      viewBox="0 0 30 20"
       aria-hidden="true"
       className="text-ink"
     >
-      <circle cx="9" cy="9" r="8.25" fill="none" stroke="currentColor" strokeWidth="1" />
+      <rect
+        x="0.75"
+        y="0.75"
+        width="28.5"
+        height="18.5"
+        rx="4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
       <text
-        x="9"
-        y="12.4"
+        x="15"
+        y="13.6"
         textAnchor="middle"
         fontSize="9.5"
+        letterSpacing="0.2"
         fontFamily="system-ui, -apple-system, sans-serif"
         fill="currentColor"
       >
-        D
+        DM
       </text>
     </svg>
   );
