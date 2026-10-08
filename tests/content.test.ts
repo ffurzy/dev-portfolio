@@ -45,6 +45,12 @@ describe("site", () => {
     expect(site.url).toMatch(/^https:\/\/[^/]+$/);
   });
 
+  it("names the city in the title and description", () => {
+    expect(site.title).toContain(site.location.city);
+    expect(site.description).toContain(site.location.city);
+    expect(site.location.areaServed.length).toBeGreaterThan(0);
+  });
+
   it("has usable contact links", () => {
     expect(site.links.email).toMatch(/^mailto:[^@\s]+@[^@\s]+$/);
     for (const href of [site.links.github, site.links.linkedin]) {

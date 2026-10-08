@@ -37,7 +37,9 @@ export default function OpenGraphImage() {
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
         <div style={{ fontSize: 64, lineHeight: 1.1 }}>{site.name}</div>
-        <div style={{ fontSize: 36, color: "#4d4d4d" }}>Full-Stack Developer</div>
+        <div style={{ fontSize: 36, color: "#4d4d4d" }}>
+          {`Full-Stack Developer · ${site.location.city}, ${site.location.region}`}
+        </div>
       </div>
       <div style={{ fontSize: 28, color: "#aaaaaa" }}>dmitriimusikhin.dev</div>
     </div>,
