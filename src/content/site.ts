@@ -19,10 +19,10 @@ export type SiteContent = {
   };
 };
 
-// Links are placeholders until the real ones are set.
+// Add linkedin when there is a profile to show; empty hides the button.
 export const site: SiteContent = {
   name: "Dmitrii Musikhin",
-  title: "Dmitrii Musikhin — Web Developer",
+  title: "Dmitrii Musikhin — Full-Stack Developer",
   description:
     "Full-stack developer working with TypeScript, React and Node.js, building web products since 2023.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://dmitriimusikhin.dev",
@@ -40,6 +40,6 @@ export const site: SiteContent = {
   links: {
     github: "https://github.com/ffurzy",
     linkedin: "",
-    email: "mailto:test@test.test",
+    email: "mailto:hello@dmitriimusikhin.dev",
   },
 };
