@@ -24,6 +24,10 @@ pnpm format:check
 pnpm build
 ```
 
+## Contact form
+
+`/contact` sends enquiries through [Resend](https://resend.com) from a Server Action. It needs one environment variable, `RESEND_API_KEY`: put it in `.env.local` for development and in the Vercel project's environment variables for production. Without the key the form shows a polite error and the rest of the site works as usual.
+
 ## Content
 
 Everything editable lives in `src/content/`:

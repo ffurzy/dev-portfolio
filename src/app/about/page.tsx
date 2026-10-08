@@ -34,7 +34,7 @@ export default function AboutPage() {
       <section className="mt-section-sm md:mt-section">
         <SectionLabel>Contact</SectionLabel>
         <div className="mt-element flex flex-wrap gap-[10px]">
-          {site.links.email && <GhostButton href={site.links.email}>Email</GhostButton>}
+          <GhostButton href="/contact">Send a message</GhostButton>
           {site.links.github && (
             <GhostButton href={site.links.github}>GitHub</GhostButton>
           )}
@@ -42,6 +42,14 @@ export default function AboutPage() {
             <GhostButton href={site.links.linkedin}>LinkedIn</GhostButton>
           )}
         </div>
+        {site.links.email && (
+          <p className="mt-element text-meta text-ash">
+            Or email{" "}
+            <a href={site.links.email} className="text-slate">
+              {site.links.email.replace(/^mailto:/, "")}
+            </a>
+          </p>
+        )}
       </section>
     </article>
   );

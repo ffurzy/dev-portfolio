@@ -11,6 +11,7 @@ export function Nav() {
       <nav aria-label="Primary" className="flex gap-element text-meta text-ash">
         <Link href="/#projects">Projects</Link>
         <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
       </nav>
     </header>
   );

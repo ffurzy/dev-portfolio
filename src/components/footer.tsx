@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { site } from "@/content/site";
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
         © {year} {site.name}
       </span>
       <nav aria-label="Contact" className="flex gap-element">
-        {site.links.email && <a href={site.links.email}>Email</a>}
+        <Link href="/contact">Contact</Link>
         {site.links.github && (
           <a href={site.links.github} target="_blank" rel="noreferrer">
             GitHub

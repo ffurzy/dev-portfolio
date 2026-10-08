@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: MetadataRoute.Sitemap = [
     { url: `${site.url}/`, changeFrequency: "monthly", priority: 1 },
     { url: `${site.url}/about`, changeFrequency: "yearly", priority: 0.5 },
+    { url: `${site.url}/contact`, changeFrequency: "yearly", priority: 0.5 },
   ];
   const projects: MetadataRoute.Sitemap = getProjects().map((project) => ({
     url: `${site.url}/projects/${project.slug}`,
