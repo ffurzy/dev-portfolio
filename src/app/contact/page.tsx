@@ -15,7 +15,8 @@ export default function ContactPage() {
       <SectionLabel>Contact</SectionLabel>
 
       <p className="mt-element max-w-[600px] text-subheading text-graphite">
-        Have a project in mind? Tell me a bit about it and I&apos;ll reply within a day.
+        Need a website, an app, or not sure yet what you need? Write a few lines and
+        I&apos;ll reply within a day.
       </p>
 
       <div className="mt-[55px] max-w-[600px]">

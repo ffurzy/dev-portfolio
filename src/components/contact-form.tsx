@@ -50,7 +50,7 @@ export function ContactForm() {
         />
       </Field>
 
-      <Field label="What are you building?" name="message" error={errors?.message}>
+      <Field label="Tell me about the project" name="message" error={errors?.message}>
         <textarea
           id="message"
           name="message"
