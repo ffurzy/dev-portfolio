@@ -7,6 +7,8 @@ export function StructuredData() {
   const sameAs = [site.links.github, site.links.linkedin].filter((href): href is string =>
     Boolean(href),
   );
+  const image = `${site.url}/opengraph-image`;
+  const logo = `${site.url}/icon.svg`;
   const address = {
     "@type": "PostalAddress",
     addressLocality: site.location.city,
@@ -24,6 +26,7 @@ export function StructuredData() {
         url: site.url,
         jobTitle: "Full-Stack Developer",
         email,
+        image,
         address,
         sameAs,
         knowsAbout: ["TypeScript", "React", "Next.js", "Node.js", "NestJS", "SwiftUI"],
@@ -34,6 +37,8 @@ export function StructuredData() {
         name: `${site.name} — Web Development`,
         url: site.url,
         description: site.description,
+        image,
+        logo,
         founder: { "@id": `${site.url}/#person` },
         address,
         areaServed: site.location.areaServed.map((name) => ({ "@type": "Place", name })),
