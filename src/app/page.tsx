@@ -12,7 +12,7 @@ export default function HomePage() {
         aria-label="Selected projects"
         className="mt-section-sm scroll-mt-[30px] md:mt-section"
       >
-        <ProjectGrid projects={projects} />
+        <ProjectGrid projects={projects} withContact />
       </section>
     </>
   );
