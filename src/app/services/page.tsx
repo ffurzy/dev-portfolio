@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { SectionLabel } from "@/components/section-label";
 import { GhostButton } from "@/components/ghost-button";
-import { ProjectGrid } from "@/components/project-grid";
-import { getProjectBySlug } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Web Development for Hamptons Businesses",
@@ -35,7 +33,6 @@ const packages = [
 ];
 
 export default function ServicesPage() {
-  const example = getProjectBySlug("elina-gabitova");
   return (
     <article className="mt-section-sm md:mt-section">
       <SectionLabel>Services</SectionLabel>
@@ -59,17 +56,6 @@ export default function ServicesPage() {
           ))}
         </dl>
       </section>
-
-      {example && (
-        <section className="mt-section-sm md:mt-section">
-          <SectionLabel>Recent work nearby</SectionLabel>
-          <p className="mt-element max-w-[600px] text-body text-graphite">
-            A portfolio for a landscape designer working in Sag Harbor and across the
-            Hamptons: project pages, a field-work section and a contact form.
-          </p>
-          <ProjectGrid projects={[example]} className="mt-[40px] max-w-[600px]" />
-        </section>
-      )}
 
       <section className="mt-section-sm md:mt-section">
         <SectionLabel>How it works</SectionLabel>
