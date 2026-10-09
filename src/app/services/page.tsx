@@ -60,17 +60,9 @@ export default function ServicesPage() {
       <section className="mt-section-sm md:mt-section">
         <SectionLabel>How it works</SectionLabel>
         <p className="mt-element max-w-[600px] text-body text-graphite">
-          A short call about what you need. A fixed quote within two days, half up front.
-          Then two to four weeks of work with a preview link you can open any time, and a
-          site on your own domain at the end. I&apos;m in Sag Harbor, so for anything
-          local we can also just meet.
-        </p>
-      </section>
-
-      <section className="mt-section-sm md:mt-section">
-        <SectionLabel>Start</SectionLabel>
-        <p className="mt-element max-w-[600px] text-subheading text-graphite">
-          Tell me about the business and what the site should do. I reply within a day.
+          Just send me a message about what you need. A few lines is enough, and I usually
+          reply the same day. Most sites take two to four weeks. I&apos;m in Sag Harbor,
+          so if you&apos;re local, we can also meet in person.
         </p>
         <div className="mt-[30px] flex flex-wrap items-baseline gap-element">
           <GhostButton href="/contact">Get in touch</GhostButton>
