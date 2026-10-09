@@ -42,8 +42,7 @@ export default function ServicesPage() {
 
       <p className="mt-element max-w-[600px] text-subheading text-graphite">
         Websites and web apps for businesses in the Hamptons and New York. Built from
-        scratch, not from a template, at a fixed price agreed before work starts, and live
-        in two to four weeks.
+        scratch, at a fixed price agreed before work starts.
       </p>
 
       <section className="mt-section-sm md:mt-section">
