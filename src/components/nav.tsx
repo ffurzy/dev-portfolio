@@ -10,6 +10,7 @@ export function Nav() {
       </Link>
       <nav aria-label="Primary" className="flex gap-element text-meta text-ash">
         <Link href="/#projects">Projects</Link>
+        <Link href="/services">Services</Link>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
       </nav>
