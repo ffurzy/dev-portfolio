@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { SectionLabel } from "@/components/section-label";
 import { ContactForm } from "@/components/contact-form";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Contact",
   description: "Tell me about your project and I'll reply within a day.",
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   const email = site.links.email?.replace(/^mailto:/, "");

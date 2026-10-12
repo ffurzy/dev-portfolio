@@ -1,6 +1,9 @@
+import type { Metadata } from "next";
 import { Hero } from "@/components/hero";
 import { ProjectGrid } from "@/components/project-grid";
 import { getProjects } from "@/lib/projects";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function HomePage() {
   const projects = getProjects();

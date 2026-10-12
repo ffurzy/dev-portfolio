@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { SectionLabel } from "@/components/section-label";
 import { GhostButton } from "@/components/ghost-button";
 import { getProjectBySlug, getProjects } from "@/lib/projects";
+import { pageMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() {
   return getProjects().map((project) => ({ slug: project.slug }));
@@ -16,7 +17,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return {};
-  return { title: project.title, description: project.summary };
+  return pageMetadata({
+    title: project.title,
+    description: project.summary,
+    path: `/projects/${project.slug}`,
+    images: [project.cover],
+  });
 }
 
 export default async function ProjectPage({ params }: PageProps<"/projects/[slug]">) {

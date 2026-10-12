@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { SectionLabel } from "@/components/section-label";
 import { GhostButton } from "@/components/ghost-button";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Web Development for Hamptons Businesses",
   description:
     "Websites and web apps for businesses in the Hamptons and New York: built from scratch, fixed price, live in two to four weeks. Based in Sag Harbor, NY.",
-};
+  path: "/services",
+});
 
 const packages = [
   {

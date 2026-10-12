@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { SectionLabel } from "@/components/section-label";
 import { GhostButton } from "@/components/ghost-button";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "About",
   description: site.description,
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
