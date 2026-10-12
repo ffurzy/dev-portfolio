@@ -13,7 +13,7 @@ export default function ContactPage() {
   const email = site.links.email?.replace(/^mailto:/, "");
   return (
     <article className="mt-section-sm md:mt-section">
-      <SectionLabel>Contact</SectionLabel>
+      <SectionLabel as="h1">Contact</SectionLabel>
 
       <p className="mt-element max-w-[600px] text-subheading text-graphite">
         Need a website, an app, or not sure yet what you need? Write a few lines and

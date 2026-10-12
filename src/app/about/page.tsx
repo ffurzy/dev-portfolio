@@ -12,7 +12,7 @@ export const metadata = pageMetadata({
 export default function AboutPage() {
   return (
     <article className="mt-section-sm md:mt-section">
-      <SectionLabel>About</SectionLabel>
+      <SectionLabel as="h1">About</SectionLabel>
 
       <div className="mt-element max-w-[600px] space-y-element text-subheading text-graphite">
         {site.about.map((paragraph) => (

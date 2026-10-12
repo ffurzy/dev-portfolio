@@ -36,7 +36,7 @@ const packages = [
 export default function ServicesPage() {
   return (
     <article className="mt-section-sm md:mt-section">
-      <SectionLabel>Services</SectionLabel>
+      <SectionLabel as="h1">Services</SectionLabel>
 
       <p className="mt-element max-w-[600px] text-subheading text-graphite">
         Websites and web apps for businesses in the Hamptons and New York. Built from
